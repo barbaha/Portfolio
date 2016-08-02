@@ -155,5 +155,10 @@ visibility: visible;
 .formulario{
 	text-align: center;
 	margin-top: 20%;
+	margin-left: 30%;
 	
+}
+.formulario > fieldset{
+	margin: 0 40% 0 0;
+
 }

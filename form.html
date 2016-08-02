@@ -48,7 +48,7 @@
                 }
                 if (senha != rep_senha) {
                     alert('Senhas diferentes');
-                    form.senha.focus();
+                    form.rep_senha.focus();
                     return false;
             }
         }
@@ -56,19 +56,23 @@
     </head>
     <body>
         <div class="formulario">
-        	<form action="elsez.php" name="form" method="POST">
-        			
-        		Nome: <input type="text" name="nome" id="nome" placeholder="Fulana de Tal"> <br>
-        		E-mail: <input type="email" name="email" id="email" placeholder="fulana@email.com"> <br>
-        		Senha: <input type="password" name="senha" id="senha" minlength="8" placeholder="minimo 8 caracteres"> <br>
-                Confirmar senha: <input type="password" name="rep_senha"  id="rep_senha" placeholder="Repita sua senha"  minlength="8"> <br>
-        		Data de Nascimento: <input type="date" name="nascimento" id="nascimento"> <br>
-        		Login: <input type="text" name="login" id="login" placeholder="fulanadetal"> <br>
-        		<input type="submit" value="Enviar" onclick="return validacao()">
-                <input type="reset" Value="Limpar">
-            </form>
+            <fieldset> <legend>Registrar-se</legend>
+            	<form action="elsez.php" name="form" method="POST">
+            			
+            		Nome: <input type="text" name="nome" id="nome" placeholder="Fulana de Tal"> <br>
+            		E-mail: <input type="email" name="email" id="email" placeholder="fulana@email.com"> <br>
+            		Senha: <input type="password" name="senha" id="senha" minlength="8" placeholder="minimo 8 caracteres"> <br>
+                    Confirmar senha: <input type="password" name="rep_senha"  id="rep_senha" placeholder="Repita sua senha"  minlength="8"> <br>
+            		Data de Nascimento: <input type="date" name="nascimento" id="nascimento"> <br>
+            		Login: <input type="text" name="login" id="login" placeholder="fulanadetal"> <br>
+            		<input type="submit" value="Enviar" onclick="return validacao()">
+                    <input type="reset" Value="Limpar">
+                </form>
+             </fieldset>
+         
         </div>
-        
+
+    
         
     </body>
 </html>
