@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validacao(){
+                var nome = form.nome.value;
+                var email = form.email.value;
+                var senha = form.senha.value;
+                var rep_senha = form.rep_senha.value;
+                var login = form.login.value;
+
+                if (nome == ""){
+                    alert('Campo Nome não preenchido');
+                    form.nome.focus();
+                    return false;
+                }
+                if (nome.lenght < 10){
+                    alert('Digite seu nome completo');
+                    form.nome.focus();
+                    return false;
+                }
+                if (email == ""){
+                    alert('Campo Email não preenchido');
+                    form.email.focus();
+                    return false;
+                }
+                if (senha == ""){
+                    alert('Campo Senha não preenchido');
+                    form.senha.focus();
+                    return false;
+                }
+                if (rep_senha == ""){
+                    alert('Campo Confirmar senha não preenchido');
+                    form.rep_senha.focus();
+                    return false;
+                }
+               
+                
+                if (senha < 9){
+                    alert('Senha deve conter no minimo 8 caracteres');
+                    form.senha.focus();
+                    return false;
+                }
+                if (senha != rep_senha) {
+                    alert('Senhas diferentes');
+                    form.senha.focus();
+                    return false;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="formulario">
+        	<form action="elsez.php" name="form" method="POST">
+        			
+        		Nome: <input type="text" name="nome" id="nome" placeholder="Fulana de Tal"> <br>
+        		E-mail: <input type="email" name="email" id="email" placeholder="fulana@email.com"> <br>
+        		Senha: <input type="password" name="senha" id="senha" minlength="8" placeholder="minimo 8 caracteres"> <br>
+                Confirmar senha: <input type="password" name="rep_senha"  id="rep_senha" placeholder="Repita sua senha"  minlength="8"> <br>
+        		Data de Nascimento: <input type="date" name="nascimento" id="nascimento"> <br>
+        		Login: <input type="text" name="login" id="login" placeholder="fulanadetal"> <br>
+        		<input type="submit" value="Enviar" onclick="return validacao()">
+                <input type="reset" Value="Limpar">
+            </form>
+        </div>
+        
+        
+    </body>
+</html>

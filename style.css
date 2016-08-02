@@ -150,3 +150,10 @@ visibility: hidden;
 #nav li li:hover ul {
 visibility: visible;
 }
+/******** CSS DO FORMULARIO ********/
+
+.formulario{
+	text-align: center;
+	margin-top: 20%;
+	
+}
