@@ -20,6 +20,7 @@
 
 		$x->execute();
 		echo "Cadastro Realizado com sucesso!";
+		header("Location:login.html");
 
 	}catch(PDOException $e){
 	echo "Codigo do erro: ".$e->getCode()." - ".$e->getMessage();

@@ -3,7 +3,7 @@
 	padding:0;
 }
 body{
-	background-color: #fff;
+	background-image: url("img/download.jpg");
 	width: 100%;
 }
 
@@ -152,13 +152,39 @@ visibility: visible;
 }
 /******** CSS DO FORMULARIO ********/
 
-.formulario{
+form{
 	text-align: center;
-	margin-top: 20%;
-	margin-left: 30%;
+	background-color: white;
+	border-radius: 14px 45px 30px 30px;
+	margin: 11% 10% 10% 35%;
+	padding: 20px;
+	height: 10%;
+	width: 30%;
 	
 }
-.formulario > fieldset{
-	margin: 0 40% 0 0;
+h3{
+	color: red;
+	text-align: center;
+}
+fieldset{
+	text-align: center;
+}
+a{
+	color: black;
+	
+}	
+.button{
+	border-radius: 15px 50px 30px;
+	background-color: white;
+	margin: 25px ;
+	padding: 35px;
+	height: 5px;
+	width: 53px;
+}
 
+label > h1{
+	color:red;
+}
+p{
+	text-align: center;
 }
