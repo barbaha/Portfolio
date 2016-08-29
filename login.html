@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript">
 		function validacao(){
@@ -22,19 +23,22 @@
 		}
 	</script>
 </head>
+
 <body>
 	<div class="button">
-        <button><h1><a href="index.html">Home</a></h1></button>
+		<h1>
+	        <a href="index.html">Home</a>			
+		</h1>
     </div>
 	<form action="login.php" method="POST">
 		Login: <input type="text" name="login" id="login"> <br>
 		Senha: <input type="password" name="senha" id="entrar"> <br>
 		<input type="submit" name="entrar" id="entrar" value="Acessar" onclick="return validacao()">
 		<input type="reset" value="Limpar"> <br><br>
-		<h5>Não registrado?<a href="cadastro.html">Clique aqui</a></h5>
-		<h5>Deseja alterar seus dados? <a href="alterar.html">Clique Aqui</a></h5>
-		<h6>Deseja excluir seus dados? <a href="excluir.html">Clique Aqui</a></h6>
-		</form>
+		<h5>Não registrado?<a href="cadastro.html" class="subl"> Clique aqui</a></h5>
+		<h5>Deseja alterar seus dados? <a href="alterar.html" class="subl"> Clique Aqui</a></h5>
+		<h6>Deseja excluir seus dados? <a href="excluir.html" class="subl"> Clique Aqui</a></h6>
+		</form> 
 
 </body>
 </html>
