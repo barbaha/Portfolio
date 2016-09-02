@@ -199,10 +199,12 @@ a{
 	color: #aaafff;
 }
 
-label > h1{
-	color:red;
-}
-
 p{
 	text-align: center;
+}
+h1{
+	color: red;
+}
+label > h1{
+	color:  #000;
 }
