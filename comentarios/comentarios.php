@@ -22,4 +22,4 @@
 </style>
 </head>
 <body>
-</body>
+</body><div class=com><table><tr><td><label>Nome: adm</label></td></tr><tr><td><label>Comentário: Deixe aqui seus comentários</label></td></tr></table></div>

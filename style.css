@@ -170,6 +170,8 @@ form{
 	padding: 20px;
 	height: 10%;
 	width: 30%;
+	border-style: solid;
+	border-color: #000;
 	
 }
 
@@ -193,6 +195,8 @@ a{
 	padding: 35px;
 	height: 5px;
 	width: 53px;
+	border-style: solid;
+	border-color: #000;
 }
 
 .subl{
