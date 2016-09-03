@@ -1,7 +1,7 @@
 <?php
 session_start();
 $login = $_SESSION['login'];
- $senha = $_SESSION['senha'];
+$senha = $_SESSION['senha'];
 $id = $_SESSION['id'];
 ?>
 <!DOCTYPE html>
