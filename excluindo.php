@@ -9,9 +9,9 @@ $query = "delete from usuario where id='$id'";
 $res= mysql_query($query, $connect)or die(mysql_error());
 
 if($res){  
-  echo "Dado removido com sucesso.";
+	echo "Dado removido com sucesso.";
 }else{  
-  echo "Falha ao tentar remover dado.";
+	echo "Falha ao tentar remover dado.";
 }
 
 ?>

@@ -14,4 +14,3 @@ $resultado = mysql_query($sql) or die (mysql_error());
 echo "Alteração realizada com sucesso!";
 ?>
 
-             
