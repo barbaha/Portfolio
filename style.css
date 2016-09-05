@@ -168,11 +168,27 @@ form{
 	border-radius: 14px 45px 30px 30px;
 	margin: 11% 10% 10% 35%;
 	padding: 20px;
-	height: 10%;
+	/* height: 10%; */
 	width: 30%;
 	border-style: solid;
 	border-color: #000;
 	
+}
+
+form > h1{
+	margin-bottom: 10px;
+}
+
+form > input{
+	height: 25px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+}
+
+form > center > textarea{
+	height: 70px;
+	margin-bottom: 10px;
+	border-radius: 3px;
 }
 
 h3{

@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <title>Página de Comentários</title>
+<!-- <link rel="stylesheet" href="../style.css"> -->
 <style type="text/css">
 	body{
 	background-image: url("images.png");
@@ -18,8 +19,18 @@
 	border-style: solid;
 	border-color: #6A5ACD;
 }
-
 </style>
 </head>
+
 <body>
-</body><div class=com><table><tr><td><label>Nome: adm</label></td></tr><tr><td><label>Comentário: Deixe aqui seus comentários</label></td></tr></table></div>
+	<div class="com">
+		<table>
+			<tr>
+				<td><label>Nome: adm</label></td>
+			</tr>
+			<tr>
+				<td><label>Comentário: Deixe aqui seus comentários</label></td>
+			</tr>
+		</table>
+	</div>
+</body>
