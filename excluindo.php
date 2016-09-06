@@ -10,6 +10,7 @@ $res= mysql_query($query, $connect)or die(mysql_error());
 
 if($res){  
 	echo "Dado removido com sucesso.";
+	header("location:index.html");
 }else{  
 	echo "Falha ao tentar remover dado.";
 }

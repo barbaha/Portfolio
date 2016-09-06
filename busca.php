@@ -10,7 +10,7 @@ $db = mysql_select_db('Elsez');
 
 $busca = $_POST['busca'];
 mysql_select_db($connect) or print mysql_error();
-$sql = mysql_query("select * from usuario where login like '%$busca%' or id like '%$busca%'");
+$sql = mysql_query("select * from usuario where nome like '%$busca%' or login like '%$busca%'");
 $count = mysql_num_rows($sql);
 
 if ($count == 0) {
@@ -24,6 +24,6 @@ if ($count > 1) {
 	echo "$count resultados encontrados!". '<br>';
 }
 while ($dados = mysql_fetch_array($sql)) {
-	echo "login - ".$dados['login']."e ID - " .$dados['id'] . '<br>';
+	echo "Nome: ".$dados['nome']." e login " .$dados['login'] . '<br>';
 }
 ?>

@@ -1,3 +1,4 @@
+<meta charset = "utf-8">
 <?php 
 $connect = mysql_connect('localhost','root','@luno1fpe');
 $db = mysql_select_db('Elsez');
@@ -13,4 +14,5 @@ $resultado = mysql_query($sql) or die (mysql_error());
 
 echo "Alteração realizada com sucesso!";
 ?>
-
+<br>
+<a href="index.html">Página inicial</a>

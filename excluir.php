@@ -1,8 +1,16 @@
 <?php
 session_start();
+
 $login = $_SESSION['login'];
- $senha = $_SESSION['senha'];
+$senha = $_SESSION['senha'];
 $id = $_SESSION['id'];
+
+if(!isset($_SESSION["login"]) || !isset($_SESSION["id"])){
+    header("Location: login.html");
+
+exit;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
